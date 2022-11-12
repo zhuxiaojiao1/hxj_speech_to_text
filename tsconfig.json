@@ -1,0 +1,46 @@
+{
+    "compilerOptions": {
+        "target": "es5",
+        "sourceMap": true,
+        "lib": [
+            "Webworker",
+            "DOM",
+            "ES2015",
+            "ES2016",
+            "ES2017",
+            "ES2018",
+            "ES2019",
+            "ES2021",
+            "ES2022",
+            "ES5",
+            "ES6",
+            "ES7",
+            "ESNext"
+        ],
+        "allowJs": true,
+        "skipLibCheck": false,
+        "esModuleInterop": true,
+        "allowSyntheticDefaultImports": true,
+        "strict": true,
+        "forceConsistentCasingInFileNames": true,
+        "module": "esnext",
+        "moduleResolution": "node",
+        "resolveJsonModule": true,
+        "isolatedModules": false,
+        "noEmit": true,
+        "jsx": "react-jsx",
+        "noImplicitAny": false,
+        "typeRoots": ["./types", "node_modules/@types"],
+        "baseUrl": "src",
+        "paths": {
+            "~/*": ["*"]
+        }
+    },
+    "plugins": [
+        {
+            "name": "typescript-tslint-plugin"
+        }
+    ],
+    "include": ["src"],
+    "exclude": ["node_modules", "types"]
+}
