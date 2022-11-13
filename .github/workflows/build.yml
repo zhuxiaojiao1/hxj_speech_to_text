@@ -12,6 +12,7 @@ jobs:
 
       - name: install dependencies
         run: |
+          cd ./
           echo "${{secrets.NPMRC_TOKEN}}" > .npmrc
           npm install
           npm run releases
