@@ -1,25 +1,30 @@
-name: library
+name: Build and Deploy
 on:
   push:
-    branches: main
+    branches: ["main"]
 
+permissions:
+  contents: write
 jobs:
-  build:
+  build-and-deploy:
     runs-on: ubuntu-latest
     steps:
-      - name: get dr_Front_ComponentStoryBook code
+      - name: Checkout
         uses: actions/checkout@v3
 
-      - name: install dependencies
+      - name: Use Node
+        uses: actions/setup-node@v1
+        with:
+          node-version: "14"
+
+      - name: Install and Build 
         run: |
-          cd ./
-          echo "${{secrets.NPMRC_TOKEN}}" > .npmrc
+          echo "${{ secrets.NPMRC_TOKEN }}" > .npmrc
           npm install
           npm run releases
 
-      - name: github pages
-        uses: crazy-max/ghaction-github-pages@v3.0.0
+      - name: Deploy
+        uses: JamesIves/github-pages-deploy-action@v4
         with:
-          build_dir: build
-        env:
-          GITHUB_TOKEN: ${{secrets.NPMRC_TOKEN}}
+          branch: page
+          folder: ./build
