@@ -10,14 +10,11 @@ jobs:
             - name: check code
               uses: actions/checkout@v3
 
-            - name: publish to github package
-              uses: elgohr/Publish-Docker-Github-Action@v4
-              with:
-                  name: speech-to-text
-                  username: ${{ github.actor }}
-                  password: ${{ secrets.MY_TOKEN }}
-                  registry: ghcr.io
-                  dockerfile: Dockerfile
+            - name: Install and Build
+              run: |
+                  echo "${{secrets.MY_TOKEN}}" > .npmrc
+                  npm install
+                  npm run releases
 
             - name: github pages
               uses: crazy-max/ghaction-github-pages@v3.0.0
