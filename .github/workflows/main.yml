@@ -1,7 +1,7 @@
 name: library
 on:
     push:
-        branches: main
+        branches: main2
 
 jobs:
     build:
@@ -20,7 +20,8 @@ jobs:
                   npm run releases
 
             - name: github pages
-              uses: JamesIves/github-pages-deploy-action@4.0.0
+              uses: crazy-max/ghaction-github-pages@v3.0.0
               with:
-                  token: ${{ secrets.NPMRC_TOKEN }}
-                  folder: build
+                  build_dir: build
+              env:
+                  GITHUB_TOKE: ${{ secrets.NPMRC_TOKEN }}
