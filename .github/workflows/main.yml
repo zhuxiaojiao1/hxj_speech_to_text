@@ -12,7 +12,7 @@ jobs:
 
             - name: Install and Build
               run: |
-                  echo "${{secrets.MY_TOKEN}}" > .npmrc
+                  echo "${{ secrets.NPMRC_TOKEN }}" > .npmrc
                   npm install
                   npm run releases
 
