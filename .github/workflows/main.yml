@@ -1,7 +1,7 @@
 name: library
 on:
     push:
-        branches: main2
+        branches: main
 
 jobs:
     build:
@@ -9,6 +9,9 @@ jobs:
         steps:
             - name: check code
               uses: actions/checkout@v3
+              with:
+                  repository: szkj-web-he/speech-to-text
+                  ref: main
 
             - name: Install and Build
               run: |
@@ -17,6 +20,7 @@ jobs:
                   npm run releases
 
             - name: github pages
-              uses: crazy-max/ghaction-github-pages@v3.0.0
+              uses: JamesIves/github-pages-deploy-action@4.0.0
               with:
-                  build_dir: build
+                  token: ${{ secrets.NPMRC_TOKEN }}
+                  folder: build
