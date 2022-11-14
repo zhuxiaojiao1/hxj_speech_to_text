@@ -1,0 +1,65 @@
+/* ScrollComponent */
+
+/* createRoot */
+
+/* default */
+
+/* harmony default export */
+
+/* provided dependency */
+
+/*#__PURE__*/
+
+/**
+ * 获取设备失败
+ */
+
+/**
+ * 讯飞API
+ */
+
+/******/
+
+/***/
+
+//     console.log(res);
+
+// CONCATENATED MODULE: ./src/Components/Button/style.scss
+
+// CONCATENATED MODULE: ./src/DefaultData/nav.ts
+
+// CONCATENATED MODULE: ./src/Pages/B/Unit/useAudio.ts
+
+// CONCATENATED MODULE: ./src/Pages/Main/style.scss
+
+// CONCATENATED MODULE: ./src/index.tsx
+
+// EXTERNAL MODULE: ./node_modules/@babel/runtime/helpers/esm/slicedToArray.js + 1 modules
+
+// EXTERNAL MODULE: ./node_modules/@babel/runtime/helpers/esm/toConsumableArray.js + 2 modules
+
+// EXTERNAL MODULE: ./node_modules/react-dom/client.js
+
+// EXTERNAL MODULE: ./node_modules/react/jsx-runtime.js
+
+// const [start, setStart] = useState(false);
+
+// extracted by mini-css-extract-plugin
+
+// setStart((pre) => !pre);
+
+// void audioContext.audioWorklet.addModule(worklet).then((res) => {
+
+// webpackRuntimeModules
+
+// });
+
+//原生API
+
+//启动
+
+//设备开始
+
+//设备结束
+
+//设置语言类型

@@ -1,0 +1,2 @@
+/*! For license information please see 141.0a7f5de332d14d0b3766.js.LICENSE.txt */
+"use strict";(self.webpackChunkspeech_to_text=self.webpackChunkspeech_to_text||[]).push([[141],{1026:e=>{e.exports=JSON.parse('{"9":{"429":{"224":{"keys":[219,"",221],"grid":["  !!"," !!!","!","!##!"]}}}}')}}]);
