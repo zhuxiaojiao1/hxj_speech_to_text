@@ -13,10 +13,6 @@
         "releases": "datareachable build",
         "lint": "eslint src --ext .js,.jsx,.ts,.tsx"
     },
-    "repository": {
-        "type": "git",
-        "url": "git+https://github.com/szkj-web-he/speech-to-text.git"
-    },
     "author": "",
     "license": "ISC",
     "devDependencies": {
@@ -35,8 +31,5 @@
         "slate-history": "^0.85.0",
         "slate-react": "^0.83.2"
     },
-    "bugs": {
-        "url": "https://github.com/szkj-web-he/speech-to-text/issues"
-    },
-    "homepage": "https://github.com/szkj-web-he/speech-to-text#readme"
+    "homepage": "https://github.com/zhuxiaojiao1/hxj-speech-to-text/"
 }
